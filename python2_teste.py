@@ -86,3 +86,4 @@ def busca_binaria(lista, alvo):
             direita = meio - 1
     return False
 print('Eliandro está na turma? ....', busca_binaria(students, 'Eliandro'))
+print('Eliandro está na turma? ....', busca_binaria(students, 'Eliandro'))
