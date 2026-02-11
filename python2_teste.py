@@ -87,4 +87,6 @@ def busca_binaria(lista, alvo):
     return False
 print('Eliandro está na turma? ....', busca_binaria(students, 'Eliandro'))
 print('Eliandro está na turma? ....', busca_binaria(students, 'Eliandro'))
+print('Eliandro está na turma? ....', busca_binaria(students, 'Eliandro'))
+
 
