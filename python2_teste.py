@@ -89,4 +89,30 @@ print('Eliandro está na turma? ....', busca_binaria(students, 'Eliandro'))
 print('Eliandro está na turma? ....', busca_binaria(students, 'Eliandro'))
 print('Eliandro está na turma? ....', busca_binaria(students, 'Eliandro'))
 
+minimo_valores = [1, 5, 4, 8, 32, 23, 32, 36, 52,365, 23, 45, 67, 89, 90]
+def minimo(lista):
+    min = lista[0]
+    for i in range(1, len(lista)):
+        if lista[i] < min:
+            min = lista[i]
+    return min
+print(' O valor mínimo da lista é', minimo(minimo_valores))
+
+minimo_valores = [1, 5, 4, 8, 32, 23, 32, 36, 52,365, 23, 45, 67, 89, 90]
+def selection(lista):
+    i = 0
+    while (i < len(lista) -1):
+        minimo = lista[i]
+        ind_minimo = i
+        for j in range(i+1, len(lista)):
+            if (lista[j] < minimo):
+                minimo = lista[j]
+                ind_minimo = j
+        lista[ind_minimo] = lista[i]
+        lista[i] = minimo
+        i += 1  
+        return lista
+
+selection(minimo_valores)
+print(minimo_valores)
 
