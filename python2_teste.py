@@ -116,3 +116,18 @@ def selection(lista):
 selection(minimo_valores)
 print(minimo_valores)
 
+l1 = list(range(1000, 0, -1))
+l2 = list(range(2000, 0, -1))
+
+t1 = time.process_time()
+selection(l1)
+t2 = time.process_time()
+
+print('Tempo de execução:', t2 - t1, 'segundos')
+
+
+t1 = time.process_time()
+selection(l2)
+t2 = time.process_time()
+
+print('Tempo de execução:', t2 - t1, 'segundos')
